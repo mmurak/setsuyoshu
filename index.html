@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<title>宝暦新撰早引節用集</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="shortcut icon" href="kiwi-bird-cyan.png?v=2">
+		<link rel="stylesheet" href="./setsuyoshu.css">
+	</head>
+	<body>
+		<header class="Header" id="HeaderID">
+			「宝暦新撰早引節用集」<br>
+			<span style="font-size: 80%;">※ <a href="https://d-archive.u-gakugei.ac.jp/item/ep20001568" target="_blank">東京学芸大学附属図書館：望月文庫</a>収蔵データを利用</span><br>
+
+			<button onclick="charClicked(this);">丁附合文</button>
+			<button onclick="charClicked(this);">序</button>
+			<button onclick="charClicked(this);">凢例</button>
+			<button onclick="charClicked(this);">文字引様</button>
+
+			<br>
+
+			<button onclick="charClicked(this);">篇冠構字盡</button>
+			<button onclick="charClicked(this);">男女名頭字盡</button>
+			<button onclick="charClicked(this);">十干十二支</button>
+			<button onclick="charClicked(this);">月の異名盡</button>
+
+			<hr>
+
+			<input type="checkbox" id="Toggler" checked>いろは入力</input>
+
+			<div id="PageNavigator" style="float: right; margin: 0 20px; display: none;">
+				<button id="PrevPage">前ページ</button>
+				<span id="Pno"></span>
+				<button id="NextPage">次ページ</button>
+				<button id="DefaultSize">デフォルトサイズ</button>
+				<input type="range" id="Magnifier" min="20" max="300" value="100" style="margin: 0 20px 0 0;"></input>
+			</div>
+
+			<div id="IROHAplate">
+
+				<table>
+					<tr>
+						<td><button onclick="charClicked(this);">ゑ</button></td>
+						<td><button onclick="charClicked(this);">あ</button></td>
+						<td><button onclick="charClicked(this);">け</button></td>
+						<td><button onclick="charClicked(this);">う</button></td>
+						<td><button onclick="charClicked(this);">つ</button></td>
+						<td><button onclick="charClicked(this);">わ</button></td>
+						<td><button onclick="charClicked(this);">ち</button></td>
+						<td><button onclick="charClicked(this);">い</button></td>
+					</tr>
+					<tr>
+						<td><button onclick="charClicked(this);">ひ</button></td>
+						<td><button onclick="charClicked(this);">さ</button></td>
+						<td><button onclick="charClicked(this);">ふ</button></td>
+						<td><button onclick="charClicked(this);">ゐ</button></td>
+						<td><button onclick="charClicked(this);">ね</button></td>
+						<td><button onclick="charClicked(this);">か</button></td>
+						<td><button onclick="charClicked(this);">り</button></td>
+						<td><button onclick="charClicked(this);">ろ</button></td>
+					</tr>
+					<tr>
+						<td><button onclick="charClicked(this);">も</button></td>
+						<td><button onclick="charClicked(this);">き</button></td>
+						<td><button onclick="charClicked(this);">こ</button></td>
+						<td><button onclick="charClicked(this);">の</button></td>
+						<td><button onclick="charClicked(this);">な</button></td>
+						<td><button onclick="charClicked(this);">よ</button></td>
+						<td><button onclick="charClicked(this);">ぬ</button></td>
+						<td><button onclick="charClicked(this);">は</button></td>
+					</tr>
+					<tr>
+						<td><button onclick="charClicked(this);">せ</button></td>
+						<td><button onclick="charClicked(this);">ゆ</button></td>
+						<td><button onclick="charClicked(this);">え</button></td>
+						<td><button onclick="charClicked(this);">お</button></td>
+						<td><button onclick="charClicked(this);">ら</button></td>
+						<td><button onclick="charClicked(this);">た</button></td>
+						<td><button onclick="charClicked(this);">る</button></td>
+						<td><button onclick="charClicked(this);">に</button></td>
+					</tr>
+					<tr>
+						<td><button onclick="charClicked(this);">す</button></td>
+						<td><button onclick="charClicked(this);">め</button></td>
+						<td><button onclick="charClicked(this);">て</button></td>
+						<td><button onclick="charClicked(this);">く</button></td>
+						<td><button onclick="charClicked(this);">む</button></td>
+						<td><button onclick="charClicked(this);">れ</button></td>
+						<td><button onclick="charClicked(this);">を</button></td>
+						<td><button onclick="charClicked(this);">ほ</button></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><button onclick="charClicked(this);">み</button></td>
+						<td></td>
+						<td><button onclick="charClicked(this);">や</button></td>
+						<td></td>
+						<td><button onclick="charClicked(this);">そ</button></td>
+						<td></td>
+						<td><button onclick="charClicked(this);">へ</button></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><button onclick="charClicked(this);">し</button></td>
+						<td></td>
+						<td><button onclick="charClicked(this);">ま</button></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><button onclick="charClicked(this);">と</button></td>
+					</tr>
+				</table>
+
+				<hr>
+
+				<div id="SelPlate" style="padding: 10px 0 0 0;"></div>
+			</div>
+		</header>
+
+		<div id="ImageContainer">
+			<img id="ImageArea" ></img>
+		</div>
+
+		<script src="./setsuyoshuData.js"></script>
+
+		<script src="./setsuyoshu.js">	</script>
+	</body>
+</html>

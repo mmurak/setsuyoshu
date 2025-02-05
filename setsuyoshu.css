@@ -1,0 +1,23 @@
+body{
+	margin: 0;
+	width: auto;
+}
+header{
+	position: sticky;
+	top: 0;
+	left: 0;
+	padding: 5px;
+	width: auto;
+	background-color: #b0c4de;
+	color: #000000;
+}
+#ImageContainer{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#ImageArea{
+	width: 100%;
+	object-fit: contain;
+	object-position: 50% 50%;
+}
