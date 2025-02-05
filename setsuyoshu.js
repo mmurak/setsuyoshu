@@ -75,7 +75,7 @@ function charClicked(obj) {
 function openPage(page) {
 	G.pno.innerHTML = page;
 	document.getElementById("PageNavigator").style = "float: right; margin: 0 20px; display: visible;";
-	G.imageArea.src = "./imageData/" + String(page).padStart(3, '0') + ".jpg";
+	G.imageArea.src = "./imageData/p" + String(page).padStart(3, '0') + ".jpg";
 }
 
 function ppInner(pno) {
