@@ -40,6 +40,7 @@ G.nextPage.addEventListener("click", () => {
 function charClicked(obj) {
 	const bu = obj.innerHTML;
 	G.selPlate.innerHTML = "";
+	G.imageArea.src = "";
 	if (prePostAmble(bu)) {
 		return;
 	}
