@@ -49,6 +49,7 @@ G.imageArea.addEventListener("click", (e) => {
 	} else {
 		prevPage();
 	}
+	e.preventDefault();
 });
 
 function charClicked(obj) {
