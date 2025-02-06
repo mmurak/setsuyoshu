@@ -151,3 +151,7 @@ function nextPage() {
 		openPage(G.currentPage);
 	}
 }
+
+function tips() {
+	alert("「いろは」部の下に「読み声の数」順に言葉が記されています。\n早稲田大学の高梨信博先生の研究によると、それ以降の配列は『蠡海節用集』や『字典節用集』における10門の意味分類（言語,時候,乾坤,器財,官位,人倫,支躰,衣食,草木,氣形）が概ね維持されているとのことです。\n\n参考文献： 『早引節用集の成立』https://waseda.repo.nii.ac.jp/record/4822/files/KokubungakuKenkyu_113_Takanashi.pdf");
+}
