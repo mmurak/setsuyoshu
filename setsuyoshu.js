@@ -12,12 +12,6 @@ class GlobalManager {
 		this.prevPage = document.getElementById("PrevPage");
 		this.nextPage = document.getElementById("NextPage");
 		this.magnifierSection = document.getElementById("MagnifierSection");
-
-		this.minDistance = 30;
-		this.startX = 0;
-		this.startY = 0;
-		this.endX = 0;
-		this.endY = 0;
 	}
 }
 const G = new GlobalManager();
@@ -47,28 +41,6 @@ G.prevPage.addEventListener("click", () => {
 
 G.nextPage.addEventListener("click", () => {
 	nextPage();
-});
-
-G.imageArea.addEventListener("touchstart", (e) => {
-	G.startX = e.touches[0].pageX;
-	G.startY = e.touches[0].pageY;
-});
-G.imageArea.addEventListener("touchmove", (e) => {
-	G.endX = e.touches[0].pageX;
-	G.endY = e.touches[0].pageY;
-});
-G.imageArea.addEventListener("touchend", (e) => {
-	const distanceX = Math.abs(G.endX - G.startX);
-	const distanceY = Math.abs(G.endY - G.startY);
-	if ((distanceX > distanceY) && distanceX > G.minDistance) {
-		if (G.startX > G.endX) {
-			prevPage();
-		} else {
-			nextPage();
-		}
-	} else {
-	}
-	return false;
 });
 
 G.imageArea.addEventListener("click", (e) => {
