@@ -71,6 +71,14 @@ G.imageArea.addEventListener("touchend", (e) => {
 	return false;
 });
 
+G.imageArea.addEventListener("click", (e) => {
+	if (e.offsetX < G.imageArea.width / 2) {
+		nextPage();
+	} else {
+		prevPage();
+	}
+});
+
 function charClicked(obj) {
 	const bu = obj.innerHTML;
 	G.selPlate.innerHTML = "";
